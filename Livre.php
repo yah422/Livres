@@ -77,9 +77,5 @@
         return $this->titre ."(" . $this->parution . ") : " . $this->nbreDePages . " pages / " . $this->prix . " € <br>";
        
     }
-    public function livre() {
-        return array ("Ca " => "1986" ,"Simetierre " =>"1983" ,"Le Fléau " => "1978 " ,"Shinning " => "1977" );
-    }
-
 
 }

@@ -51,9 +51,14 @@ class Auteur  {
         public function addlivres($livres){
             $this -> livres[] = $livres;
         }
+        public function livres() {
+            return array ("Ca ","Simetierre " ,"Le Fléau " ,"Shinning " );
+        }
 
-        public function afficherBibliographie(){
-            return ;
+        public function afficherBibliographie($livres){
+            foreach ($livres as $livre){
+                $livres[] = $livre;
+            }
     
         }
        
