@@ -42,23 +42,21 @@ class Auteur  {
         public function __construct($nom,$prenom){
             $this -> nom = $nom;
             $this -> prenom = $prenom;
+            $this -> livres = [];
         }
 
         public function __toString(){
             return $this -> nom;
         }
 
-        public function addlivres($livres){
-            $this -> livres[] = $livres;
+        public function addlivre($livre){
+            $this -> livres[] = $livre;
         }
         public function livres() {
             return array ("Ca ","Simetierre " ,"Le Fléau " ,"Shinning " );
         }
 
-        public function afficherBibliographie($livres){
-            foreach ($livres as $livre){
-                $livres[] = $livre;
-            }
+        public function afficherBibliographie(){
     
         }
        

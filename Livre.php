@@ -14,6 +14,7 @@
         $this -> parution = $parution;
         $this -> prix = $prix;
         $this -> auteur = $auteur;
+        $this -> auteur ->addLivre($this);
     }
 
 
