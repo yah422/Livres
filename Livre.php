@@ -1,12 +1,12 @@
 <?php
- 
+ // ---------------- MISE EN PLACE DE LA CLASS LIVRE -----------------------
  class Livre{
     private string $titre;
     private string $nbreDePages;
     private string $parution;
     private int $prix;
     private Auteur $auteur;
-
+// ---------------- CONSTRUCT DE LA CLASS LIVRE -----------------------
 
     public function __construct($titre,$nbreDePages,$parution,$prix, Auteur $auteur){
         $this -> titre = $titre;
@@ -17,6 +17,7 @@
         $this -> auteur ->addLivre($this);
     }
 
+// ------------------ GET ET SET DU TITRE ----------------------
 
     public function getTitre(): string
     {
@@ -28,6 +29,7 @@
 
             return $this;
     }
+// ------------------ GET ET SET DU NOMBRE DE PAGES ----------------------
 
     public function getNbreDePages(): string
     {
@@ -39,6 +41,7 @@
 
             return $this;
     }
+// ------------------ GET ET SET DE LA DATE DE PARUTION ----------------------
 
     public function getParution(): string
     {
@@ -50,6 +53,7 @@
 
             return $this;
     }
+// ------------------ GET ET SET DU PRIX ----------------------
 
     public function getPrix(): int
     {
@@ -61,6 +65,7 @@
 
             return $this;
     }
+// ------------------ GET ET SET DE L'AUTEUR ----------------------
 
    
     public function getAuteur(): string
@@ -73,7 +78,7 @@
 
             return $this;
     }
-
+// --------------- MISE EN PLACE DE LA METHODE TO STRING ------------------
     public function __toString(){
         return $this->titre ."(" . $this->parution . ") : " . $this->nbreDePages . " pages / " . $this->prix . " € <br>";
        
